@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_refresh_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="xFy-kh-cFu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HsU-IG-9fj" customClass="JXH_LockView">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HsU-IG-9fj" secondAttribute="height" id="CkZ-PA-y39"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HsU-IG-9fj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D74-iG-gOp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xFy-kh-cFu" secondAttribute="bottom" id="Hnh-Jd-pTR"/>
+                            <constraint firstItem="HsU-IG-9fj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MWy-Pc-92Y"/>
+                            <constraint firstItem="xFy-kh-cFu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XTJ-BG-tXq"/>
+                            <constraint firstItem="HsU-IG-9fj" firstAttribute="width" secondItem="xFy-kh-cFu" secondAttribute="width" id="YvX-2e-pU4"/>
+                            <constraint firstItem="xFy-kh-cFu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="fNN-vI-waq"/>
+                            <constraint firstAttribute="trailing" secondItem="xFy-kh-cFu" secondAttribute="trailing" id="oCd-l5-XbO"/>
+                            <constraint firstItem="xFy-kh-cFu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vKj-Ir-wRg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fNN-vI-waq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home_refresh_bg.png" width="640" height="1008"/>
+    </resources>
+</document>
